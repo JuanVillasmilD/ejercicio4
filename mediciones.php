@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-dark">
         <div class="container">
             <a class="navbar-brand" href="./index.php">
                 <img src="./assets/img/logo.png" alt="Bootstrap" width="100%" height="50">
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 <a href="./insert_medicion.php?id=<?php echo $pozo['id_pozo'] ?>" class="btn btn__nuevo">Nuevo</a>
             </form>
         </div>
-        <table class="table table-hover">
+        <table class="table table-dark table-hover">
             <?php if (count($datosmediciones) > 0) : ?>
                 <thead>
                     <tr class="head">

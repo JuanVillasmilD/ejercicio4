@@ -47,7 +47,7 @@ if (isset($_SESSION['datos'])) {
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-dark">
         <div class="container">
             <a class="navbar-brand" href="./index.php">
                 <img src="./assets/img/logo.png" alt="Bootstrap" width="100%" height="50">

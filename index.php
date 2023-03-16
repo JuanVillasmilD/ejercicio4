@@ -33,7 +33,7 @@ if (mysqli_num_rows($peticion) > 0) {
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/logo.png" alt="Bootstrap" width="100%" height="50">
@@ -47,9 +47,9 @@ if (mysqli_num_rows($peticion) > 0) {
                 <a href="insert_pozo.php" class="btn btn__nuevo">Nuevo</a>
             </form>
         </div>
-        <table class="table table-hover">
+        <table class="table table-dark table-hover">
             <?php if (count($datospozo) > 0) : ?>
-                <thead>
+                <thead class="bg-primary">
                     <tr class="head">
                         <td>Id</td>
                         <td>Pozo</td>
