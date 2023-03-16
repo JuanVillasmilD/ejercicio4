@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     </nav>
     <br>
     <div class="chart-container" style="width: 600px; height: 300px;">
-        <canvas id="lineChart"></canvas>
+        <canvas id="lineChart" style="background-color: #e3e3e3"></canvas>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 <a href="./insert_medicion.php?id=<?php echo $pozo['id_pozo'] ?>" class="btn btn__nuevo">Nuevo</a>
             </form>
         </div>
-        <table class="table table-dark table-hover">
+        <table class="table">
             <?php if (count($datosmediciones) > 0) : ?>
                 <thead>
                     <tr class="head">
@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                             <td><?= $mediciones['medicion'] . ' PSI' ?></td>
                             <td><?= $mediciones['fecha'] ?></td>
                             <td>
-                                <a href="./edit_medicion.php?id=<?= $mediciones['id_medicion'] ?>"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a title="Editar medicion" href="./edit_medicion.php?id=<?= $mediciones['id_medicion'] ?>"><i id="editi" class="fa-solid fa-pen-to-square"></i></a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

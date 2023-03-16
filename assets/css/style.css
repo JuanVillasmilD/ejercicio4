@@ -54,6 +54,7 @@ h3 {
     display: flex;
     width: 100%;
     overflow: hidden;
+    color: #131213;
 }
 
 form .input__text {
@@ -68,6 +69,11 @@ form .input__text {
     max-width: 30%;
     margin-right: 10px;
     outline: medium none;
+    color: #292929fa;
+}
+
+form option {
+    color: #292929fa;
 }
 
 form .input__text:focus {
@@ -101,16 +107,45 @@ form .btn {
     text-align: center;
 }
 
-i{
+#editi{
     font-size: 20px;
     margin-left: 5px;
-    color: #8d0000;
+    color: #d1d100;
+    
 }
 
-i:hover{
+#editi:hover{
+    font-size: 20px;
+    margin-left: 5px;
+    color: #848d00;
+}
+
+
+#viewi{
+    font-size: 20px;
+    margin-left: 5px;
+    color: #0034d1;
+    
+}
+
+#viewi:hover{
+    font-size: 20px;
+    margin-left: 5px;
+    color: #00268d;
+}
+
+
+#deletei{
     font-size: 20px;
     margin-left: 5px;
     color: #d10000;
+    
+}
+
+#deletei:hover{
+    font-size: 20px;
+    margin-left: 5px;
+    color: #8d0000;
 }
 
 .boton {
@@ -133,7 +168,7 @@ table {
 }
 
 table .head {
-    background-color: #be0000;
+    background-color: #a40000;
     color: #ffffff;
 }
 
@@ -143,13 +178,13 @@ table .head td {
 }
 
 table tr td {
-    border: 1px solid #ccc;
+    border: 1px solid #8b8b8b;
     padding: 10px;
     font-size: 14px;
 }
 
 .tabla {
-    background-color: #fff;
+    background-color: #131213;
     font-size: 14px;
     font-family: Arial;
     text-align: center;

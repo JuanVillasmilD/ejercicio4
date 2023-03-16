@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="mb-3">
                 <label for="depth" class="form-label">Profundidad:</label>
-                <input type="text" autocomplete="off" class="form-control" id="depth" name="depth" value="<?php echo $pozo['depth']; ?>" required>
+                <input type="number" autocomplete="off" class="form-control" id="depth" name="depth" value="<?php echo $pozo['depth']; ?>" required>
             </div>
             <button type="submit" class="btn btn-primary">Guardar cambios</button>
         </form>

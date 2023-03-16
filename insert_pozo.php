@@ -67,7 +67,7 @@ if (isset($_SESSION['datos'])) {
                     <option value="Faja (FPO)">Faja (FPO)</option>
                     <option value="Costa afuera">Costa afuera</option>
                 </select>
-                <input type="numberp" autocomplete="off" required step="any" min="1" name="depth" placeholder="Profundidad del pozo" class="input__text">
+                <input type="number" autocomplete="off" required step="any" min="1" name="depth" placeholder="Profundidad del pozo" class="input__text">
             </div>
             <div class="btn__group">
                 <input type="submit" name="guardar" value="Guardar" class="btn btn__primary">

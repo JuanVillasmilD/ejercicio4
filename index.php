@@ -47,9 +47,9 @@ if (mysqli_num_rows($peticion) > 0) {
                 <a href="insert_pozo.php" class="btn btn__nuevo">Nuevo</a>
             </form>
         </div>
-        <table class="table table-dark table-hover">
+        <table class="table">
             <?php if (count($datospozo) > 0) : ?>
-                <thead class="bg-primary">
+                <thead>
                     <tr class="head">
                         <td>Id</td>
                         <td>Pozo</td>
@@ -65,7 +65,7 @@ if (mysqli_num_rows($peticion) > 0) {
                             <td><?= '#' . $pozo['numberp'] ?></td>
                             <td><?= $pozo['locationp'] ?></td>
                             <td><?= $pozo['depth'] . ' m' ?></td>
-                            <td> <a href="./edit_pozo.php?id=<?php echo $pozo['id_pozo'] ?>"><i class="fa-solid fa-pen-to-square"></i></a> <a href="./mediciones.php?id=<?php echo $pozo['id_pozo'] ?>"><i class="fa-solid fa-eye"></i></a> <a href="./index.php?id=<?php echo $pozo['id_pozo'] ?>"><i class="fa-solid fa-trash"></i></a></td>
+                            <td> <a title="Editar pozo" href="./edit_pozo.php?id=<?php echo $pozo['id_pozo'] ?>"><i id="editi" class="fa-solid fa-pen-to-square"></i></a> <a title="Ver mediciones del pozo" href="./mediciones.php?id=<?php echo $pozo['id_pozo'] ?>"><i id="viewi" class="fa-solid fa-eye"></i></a> <a title="Eliminar pozo" href="./index.php?id=<?php echo $pozo['id_pozo'] ?>"><i id="deletei" class="fa-solid fa-trash"></i></a></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
